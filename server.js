@@ -9,6 +9,8 @@ app.use(express.json());
 app.post("/webhook/message", (req, res) => {
     const payload = req.body;
 
+    console.log("Incoming Payload:", JSON.stringify(payload, null, 2));
+
     // Handle only outgoing messages
     if (payload.message_type !== "outgoing") {
       console.log("Message type is not 'outgoing'. Ignoring...");
