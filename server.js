@@ -7,49 +7,37 @@ app.use(express.json());
 
 // Webhook route
 app.post("/webhook/message", (req, res) => {
-  const { contact_identifier, chatwoot_data, message } = req.body;
+    const payload = req.body;
 
-  // Validate payload
-  if (!contact_identifier || !chatwoot_data || !message) {
-    console.error("Invalid payload received:", req.body);
-    return res.status(400).json({ success: false, message: "Invalid payload" });
-  }
+    // Handle only outgoing messages
+    if (payload.message_type !== "outgoing") {
+      console.log("Message type is not 'outgoing'. Ignoring...");
+      return res.status(200).json({ success: true, message: "Ignored non-outgoing message" });
+    }
 
-  // Log received payload
-  console.log("Received webhook data:");
-  console.log(`Contact Identifier: ${contact_identifier}`);
-  console.log(`Chatwoot Data: ${JSON.stringify(chatwoot_data, null, 2)}`);
-  console.log(`Message: ${JSON.stringify(message, null, 2)}`);
+    console.log("Processing outgoing message...");
 
-  // Simulate searching for a conversation in a database
-  console.log("\nSimulating database search...");
-  const conversation = {
-    contact_identifier: "user-123",
-    chatwoot_data: { id: "chatwoot-id", inbox_id: "inbox-id" },
-    messages: [
-      { sender: "user", message: "Hello!", chatwootId: "msg-1", timestamp: new Date() },
-    ],
-  };
+    const {
+      conversation: {
+        id: chatwootConversationId,
+        inbox_id: inboxId,
+        contact_inbox: { source_id: contactIdentifier },
+      },
+      content: messageContent,
+      id: chatwootMessageId,
+      sender: { name: senderName },
+    } = payload;
 
-  console.log("Existing conversation found in the database:");
-  console.log(JSON.stringify(conversation, null, 2));
+    // Log incoming payload
+    console.log("Parsed Payload:", {
+      chatwootConversationId,
+      inboxId,
+      contactIdentifier,
+      messageContent,
+      chatwootMessageId,
+      senderName,
+    });
 
-  // Simulate updating the conversation
-  console.log("\nUpdating conversation with the new message...");
-  conversation.messages.push({
-    sender: message.sender,
-    message: message.content,
-    chatwootId: message.id,
-    timestamp: new Date(),
-  });
-
-  // Update last activity time
-  conversation.last_activity_time = new Date();
-
-  console.log("Updated conversation:");
-  console.log(JSON.stringify(conversation, null, 2));
-
-  // Respond with success
   res.status(200).json({ success: true, message: "Data processed and logged successfully!" });
 });
 
