@@ -1,0 +1,124 @@
+Incoming Payload: {
+  "account": {
+    "id": 109720,
+    "name": "Aaikyam"
+  },
+  "additional_attributes": {},
+  "content_attributes": {},
+  "content_type": "text",
+  "content": "Hello Purvaaaaa",
+  "conversation": {
+    "additional_attributes": {},
+    "can_reply": true,
+    "channel": "Channel::Api",
+    "contact_inbox": {
+      "id": 212298321,
+      "contact_id": 213572043,
+      "inbox_id": 53765,
+      "source_id": "f46dd922-1163-4a66-abb2-837dc106644c",
+      "created_at": "2024-12-26T20:59:20.955Z",
+      "updated_at": "2024-12-26T20:59:20.955Z",
+      "hmac_verified": false,
+      "pubsub_token": "7i6AHvm6YTN3cETRmarKeHcu"
+    },
+    "id": 1,
+    "inbox_id": 53765,
+    "messages": [
+      {
+        "id": 94327748,
+        "content": "Hello Purvaaaaa",
+        "account_id": 109720,
+        "inbox_id": 53765,
+        "conversation_id": 1,
+        "message_type": 0,
+        "created_at": 1735249447,
+        "updated_at": "2024-12-26T21:44:07.275Z",
+        "private": false,
+        "status": "sent",
+        "source_id": null,
+        "content_type": "text",
+        "content_attributes": {},
+        "sender_type": "Contact",
+        "sender_id": 213572043,
+        "external_source_ids": {},
+        "additional_attributes": {},
+        "processed_message_content": "Hello Purvaaaaa",
+        "sentiment": {},
+        "conversation": {
+          "assignee_id": null,
+          "unread_count": 1,
+          "last_activity_at": 1735249447,
+          "contact_inbox": {
+            "source_id": "f46dd922-1163-4a66-abb2-837dc106644c"
+          }
+        },
+        "sender": {
+          "additional_attributes": {},
+          "custom_attributes": {},
+          "email": "rishitshivesh@gmail.com",
+          "id": 213572043,
+          "identifier": null,
+          "name": "Rishit",
+          "phone_number": null,
+          "thumbnail": "https://app.chatwoot.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBenJ6OUE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--c1f27c8963fc548c54cd5df79bd16e786f72fcca/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQWZvdyIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--624b3ceb3fdf42c4b07c7818563fe60603b6095b/88869197a6e863d1918f52c21ced7ff6.png",
+          "type": "contact"
+        }
+      }
+    ],
+    "labels": [],
+    "meta": {
+      "sender": {
+        "additional_attributes": {},
+        "custom_attributes": {},
+        "email": "rishitshivesh@gmail.com",
+        "id": 213572043,
+        "identifier": null,
+        "name": "Rishit",
+        "phone_number": null,
+        "thumbnail": "https://app.chatwoot.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBenJ6OUE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--c1f27c8963fc548c54cd5df79bd16e786f72fcca/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQWZvdyIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--624b3ceb3fdf42c4b07c7818563fe60603b6095b/88869197a6e863d1918f52c21ced7ff6.png",
+        "type": "contact"
+      },
+      "assignee": null,
+      "team": null,
+      "hmac_verified": false
+    },
+    "status": "open",
+    "custom_attributes": {},
+    "snoozed_until": null,
+    "unread_count": 1,
+    "first_reply_created_at": "2024-12-26T21:23:47.939Z",
+    "priority": null,
+    "waiting_since": 0,
+    "agent_last_seen_at": 1735248742,
+    "contact_last_seen_at": 0,
+    "last_activity_at": 1735249447,
+    "timestamp": 1735249447,
+    "created_at": 1735246907
+  },
+  "created_at": "2024-12-26T21:44:07.275Z",
+  "id": 94327748,
+  "inbox": {
+    "id": 53765,
+    "name": "Mine"
+  },
+  "message_type": "incoming",
+  "private": false,
+  "sender": {
+    "account": {
+      "id": 109720,
+      "name": "Aaikyam"
+    },
+    "additional_attributes": {},
+    "avatar": "https://app.chatwoot.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBenJ6OUE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--c1f27c8963fc548c54cd5df79bd16e786f72fcca/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQWZvdyIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--624b3ceb3fdf42c4b07c7818563fe60603b6095b/88869197a6e863d1918f52c21ced7ff6.png",
+    "custom_attributes": {},
+    "email": "rishitshivesh@gmail.com",
+    "id": 213572043,
+    "identifier": null,
+    "name": "Rishit",
+    "phone_number": null,
+    "thumbnail": "https://app.chatwoot.com/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBenJ6OUE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--c1f27c8963fc548c54cd5df79bd16e786f72fcca/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQWZvdyIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--624b3ceb3fdf42c4b07c7818563fe60603b6095b/88869197a6e863d1918f52c21ced7ff6.png"
+  },
+  "source_id": null,
+  "event": "message_created"
+}
+Message type is not 'outgoing'. Ignoring...
